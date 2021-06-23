@@ -1,0 +1,21 @@
+{
+  "name": "my-engine",
+  "version": "0.1.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --hot --inline",
+    "build": "webpack --watch",
+    "build-prod": "webpack --watch -p --config ./webpack.production.config.js",
+    "buildserver-master": "webpack",
+    "buildserver-release": "webpack -p --config ./webpack.production.config.js",
+    "lint": "eslint --fix"
+  },
+  "main": "index.html",
+  "private": true,
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-native-htmlview": "^0.16.0",
+    "react-table": "^7.7.0"
+  }
+}
